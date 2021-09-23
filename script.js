@@ -6,9 +6,9 @@ class Simon {
     constructor(simonButtons, start, round) {
         this.round = 0;
         this.userPosition = 0;
-        this.totalRounds = 8;
+        this.totalRounds = 10;
         this.sequence = [];
-        this.speed = 700;
+        this.speed = 650;
         this.blockedButtons = true;
         this.buttons = Array.from(simonButtons);
         this.display = {

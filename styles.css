@@ -1,0 +1,95 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-family: 'Press Start 2P', sans-serif;
+}
+body {
+    height: 80vh;
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+
+}
+.simon {
+    border: 2px white solid;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Contenedor {
+    margin: 20px 0 40px 0;
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+
+}
+
+.boton {
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.boton:active,
+.active {
+    filter: brightness(35%);
+}
+
+.a {
+    background-color: #cf1313;
+}
+
+.e {
+    background-color: #00c8ff;
+}
+
+.i {
+    background-color: #08f100;
+}
+
+.o {
+    background-color: #fbff00;
+}
+
+#start {
+    width: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 39%;
+    border: none;
+    font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #587792;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#start:disabled {
+    background-color: #eee;
+    color: gray;
+    opacity: 30%;
+
+}
+.titulo {
+    width: min-content;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center
+    
+}
+#round{
+    font-size: 12px;
+}
+.winner {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }
